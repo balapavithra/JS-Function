@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Function Task</title>
+</head>
+
+<body>
+    <P>Array = [10, 30, 20, 50, 40, 90, 80, 70, 60]</P>
+    <p id="demo"></p>
+    <script>
+        const numbers = [10, 30, 20, 50, 40, 90, 80, 70, 60]
+        numbers.sort(function (a, b) { return a - b });
+        let sum = numbers.reduce(myFunction);
+        function myFunction(total, value) {
+            return total + value;
+        }
+        document.getElementById("demo").innerHTML = "MIN,MAX,SUM: " + numbers[0] + "," + numbers[8] + "," + sum;
+        console.log(numbers[0],numbers[8],sum)
+    </script>
+</body>
+
+</html>
